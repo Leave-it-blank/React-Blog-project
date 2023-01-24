@@ -1,5 +1,10 @@
- 
-  function Modal ({children, hideModal}){
+ import { useNavigate } from "react-router-dom";
+  function Modal ({children}){
+
+    const navigate = useNavigate();
+    function hideModal(){
+        navigate('..');
+    }
     return <>
         <div className=" absolute top-0 left-0 w-full h-screen bg-neutral-800  opacity-70"  onClick={hideModal}/>
         <dialog open  className=" shadow-sm overflow-hidden p-3  bg-transparent ">
