@@ -19,6 +19,7 @@ function PostsList() {
             title={post.title}
             body={post.body}
             key={post.title}
+            id={post.id}
           />
         ))}
       </ul>

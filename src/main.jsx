@@ -17,11 +17,11 @@ const router = createBrowserRouter([
         element: <Posts />,
         loader: () => postLoader(),
         children: [
-          // {
-          //   path: "/:id",
-          //   children: <PostDetails />,
-          //   loader: () => postDetailsLoader(),
-          // },
+          {
+            path: "/:id",
+            element: <PostDetails />,
+            loader: ({ params }) => postDetailsLoader(params),
+          },
           {
             path: "/create-post",
             element: <CreatePost />,
