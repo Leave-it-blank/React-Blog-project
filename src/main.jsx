@@ -7,10 +7,12 @@ import CreatePost, { action as actionCreatePost } from "./routes/CreatePost";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./routes/RootLayout";
 import PostDetails, { loader as postDetailsLoader } from "./routes/PostDetails";
+import ErrorPage from "./routes/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

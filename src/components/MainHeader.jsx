@@ -5,7 +5,7 @@ function MainHeader({}) {
     <>
       <div className="flex flex-row justify-between">
         <div className="p-3 capitalize align-middle text-2xl font-serif font-bold underline underline-offset-auto hover:animate-pulse cursor-pointer">
-          My Blog
+          <Link to="/">Bloging Web App</Link>
         </div>
 
         <Link
